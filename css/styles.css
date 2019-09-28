@@ -1,0 +1,269 @@
+*
+{
+    margin           : 0;
+    padding          : 0;
+    box-sizing       : border-box;
+    scroll-behavior  :smooth;
+}
+
+html {height : 100%}
+
+body 
+{
+    background-color        :  #111;
+    height                  : 100%;
+    color                   : #fff;
+    line-height             : 1.4; 
+}
+
+
+.page
+{
+    max-width   : 80%;
+    margin  : .3rem auto;
+    /* border  : 2px solid white; */
+   height   : 100%;
+}
+
+.header     
+{
+    /* border      : 2px solid red; */
+    width               : 100%;
+    display             : flex;
+    justify-content     :  space-between; 
+    border-bottom       : 2px solid var(--color1);
+    /* padding-bottom      : 120px; */
+    height              : 15%;
+}
+
+.header__logo
+{
+   /*  border     : 2px solid white; */
+     width      : max-content;
+     height     : 100%;
+}
+
+.header__img
+{
+    height      : 100%;
+    display     : block;
+}
+
+.header__nav
+{
+    /* border            : 2px solid white; */
+    width         : 50%;
+}
+
+.nav__list
+{
+    display       : flex;
+    align-items   : center;
+    justify-content : space-between;
+    height        : 100%;
+}
+
+.nav__list__item
+{
+    list-style      : none;
+}
+
+.nav__list__link
+{
+    text-decoration : none;
+    color           : #fff;
+
+    /* border          : 2px solid red; */
+    padding         : 1rem;
+    transition      : box-shadow .5s linear;
+    text-align      : center;
+    font-family     : Arial, Helvetica, sans-serif; 
+    font-weight     : 700;
+}
+
+.nav__list__link:hover 
+{
+
+    box-shadow:  inset 0 50px var(--color1);
+}
+
+
+/* ******************************main************************* */
+
+
+.section
+{
+    height      : 85%;
+     /*border      : 2px solid red;*/
+}
+.section__figure
+{
+    /* border : 2px solid white; */
+    width       : 100%;
+    height      : 100%;    
+}
+
+.section__figure__img
+{
+    display     : block;
+    width       : 100%;
+    height      : 100%;
+    filter      : brightness(75%)
+}
+
+
+/* ******************************main************************* */
+.main
+{
+    /* border  : 2px solid white; */
+    margin  : 2rem 0;
+}
+
+.main__section__info
+{
+    /* border  : 2px solid red; */
+    margin  : 1rem 0;
+}
+
+.main__txt
+{
+    text-align      : center;
+}
+
+.main__article
+{
+    /* border  : 2px solid white; */
+    width   : 90%;
+    margin  : auto;
+}
+
+details
+{
+    /* border : 2px solid white; */
+    
+}
+
+
+.main__details p
+{
+    padding     : .5rem;
+
+}
+
+details[open]
+{
+color   : var(--color1);
+outline: none;
+}
+
+details[open] summary
+{
+    color   : #fff;
+}
+
+summary::-webkit-details-marker 
+{
+    display : none;
+}
+
+.summary__historia::before 
+{
+    content: url("https://img.icons8.com/ios-filled/24/2fad5d/activity-history.png");
+    /* border      : 1px solid #fc0; */
+    display     : inline-block;
+    width       : max-content;
+    height      : 24px;
+    /* height: max-content; */
+    margin-right: .3rem;
+    padding     : .1rem;
+    vertical-align: middle;
+}
+
+.summary__ejemplo::before 
+{
+    content: url("https://img.icons8.com/material-outlined/24/2fad5d/example.png");
+    /* border      : 1px solid #fc0; */
+    display     : inline-block;
+    width       : max-content;
+    height      : 24px;
+    /* height: max-content; */
+    margin-right: .3rem;
+    padding     : .1rem;
+    vertical-align: middle;    
+}
+
+.summary__definicion::before 
+{
+    content: url("https://img.icons8.com/ios-glyphs/24/2fad5d/term.png");
+    /* border      : 1px solid #fc0; */
+    display     : inline-block;
+    width       : max-content;
+    height      : 24px;
+    /* height: max-content; */
+    margin-right: .3rem;
+    padding     : .1rem;
+    vertical-align: middle;    
+}
+
+summary
+{
+    cursor: pointer;
+}
+
+
+.main__details
+{
+    margin-bottom   : 1rem ;
+}
+
+.main__details__img
+{
+    width       : 90%;
+    border-radius : 1rem;
+    display     : block;
+    margin      : .5rem auto;
+}
+
+.main__details_list 
+{
+    /* border : 2px solid white; */
+    /* list-style: none; */
+    width       : max-content;
+    margin-left : 5%;
+}
+
+
+
+
+
+
+
+
+/* ******************************footer************************* */
+
+.footer
+{
+    display     : flex;
+    justify-content: space-between;
+    /* align-items     : center; */
+    border      : 2px solid white;
+    color       : var(--color1);
+
+}
+
+.footer__about
+{
+   /* background-color: red; */
+   height            : 150px;
+}
+
+address
+{
+    /* border      : 2px solid white; */
+    display     : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height  : 100%;
+}
+
+
