@@ -12,9 +12,11 @@ html {height : 100%}
 body 
 {
     background-color        :  #111;
-    height                  : 100%;
     color                   : #fff;
+    height                  : 100%;
     line-height             : 1.4; 
+    width                   : 100%;
+    /* overflow                : hidden; */
 }
 
         /* mejora del scrollbar */
@@ -180,19 +182,12 @@ details
 .main__details p
 {
     padding     : .5rem;
+    color       : #fff;
 
 }
 
-details[open]
-{
-color   : var(--color1);
-outline: none;
-}
 
-details[open] summary
-{
-    color   : #fff;
-}
+
 
 summary::-webkit-details-marker 
 {
@@ -241,6 +236,7 @@ summary::-webkit-details-marker
 summary
 {
     cursor: pointer;
+    color   : var(--color1);
 }
 
 
@@ -263,7 +259,73 @@ summary
     /* list-style: none; */
     width       : max-content;
     margin-left : 5%;
+    margin-bottom :1rem;
+    position    : relative;
+
 }
+
+.main__details__link
+{
+    /* position : relative; */
+    /* border  : 2px solid white; */
+    width   : max-content;
+    color   : #fff;
+    border-bottom   : 1px solid transparent;
+    cursor: pointer;
+
+}
+
+.main__details__link:hover
+{
+    border-bottom   : 1px solid var(--color1);
+}
+
+
+.main__details__link:hover .box__model 
+{
+   
+    display: block;
+    z-index     : 10;    
+}
+
+
+
+        /* estilos de box model */
+
+.box__model
+{
+    border           : 1px solid white;
+    width            : 300px;
+    height           : 100%;
+    border-radius    : .5rem;
+    overflow         : hidden;
+    position         : absolute;
+    left             : 0;
+    top              : 0;
+    display          : none;
+    transform        : translateX(200%); 
+    background-color : #111;    
+}
+
+.box__model__figure
+{
+    max-width       : 100%;
+    height          : 100%;
+    display         : block;
+    /* border          : 2px solid red; */
+    
+}
+
+.box__model__figure__img
+{
+    display     : block;
+    width       : 100%;
+    height      : 100%;
+}
+
+
+
+
 
 
 
@@ -280,7 +342,7 @@ summary
     justify-content: space-between;
     /* align-items     : center; */
     border      : 2px solid white;
-    color       : var(--color1);
+    /* color       : var(--color1); */
 
 }
 
