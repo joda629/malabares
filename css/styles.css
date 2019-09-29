@@ -114,6 +114,7 @@ body::-webkit-scrollbar-button
     text-align      : center;
     font-family     : Arial, Helvetica, sans-serif; 
     font-weight     : 700;
+    outline         : none;
 }
 
 .nav__list__link:hover 
@@ -172,11 +173,12 @@ body::-webkit-scrollbar-button
     margin  : auto;
 }
 
-details
+details,summary
 {
-    /* border : 2px solid white; */
-    
+    /* border : 2px solid white; */   
 }
+
+
 
 
 .main__details p
@@ -237,7 +239,9 @@ summary
 {
     cursor: pointer;
     color   : var(--color1);
+    outline     : none;
 }
+
 
 
 .main__details
