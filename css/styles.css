@@ -160,112 +160,63 @@ body::-webkit-scrollbar-button
 
 .imgtwo
 {
-    left    : 100%;
+  
     animation   : slide 10s linear infinite;
 }
 
 @keyframes slide
 {
 
-    0%
-    {
-        opacity: 0;
-    }
-
-    40%
-    {
-        left    : 0;
-        opacity : 0;
-    }
-
-    45%
-    {
-        opacity: .5;
-    }
-
-    46%
-    {
-        opacity: .6;
-    }
- 
-    47%
-    {
-        opacity: .7;
-    }
-
-    48%
-    {
-        opacity: .8;
-    }
-
     49%
     {
-        opacity: .9;
-    } 
- 
-
+      opacity   : 1;
+    }
     50%
     {
-        left    : 0;
-        opacity: 1;
+      opacity   : .9;
     }
-
-    80%
+    51%
     {
-        opacity: 1;
+      opacity   : .8;
     }
-
-
-    90%
+    52%
     {
-        left    : 0;
-        opacity     : .5;
+      opacity   : .7;
+    }  
+    53%
+    {
+      opacity :.6;
     }
-
-    91%
-    {
-        left    : 0;
-        opacity     : .4;
-    }
-
-    92%
-    {
-        left    : 0;
-        opacity     : .3;
-    }
-
-    93%
-    {
-        left    : 0;
-        opacity     : 0;
-    }
-
-    94%
-    {
-        left    : 0;
-        opacity     : 0;
-    }
-
-    95%
-    {
-        opacity: 0;
-    }
-
-
-
-    100%
-    {
-        opacity: 0;
-        left    :100%;
-    }
-
-    /* 100%
-    {
-        left : 100%;
-        opacity: 0;
-    } */
   
+    54%
+    {
+      opacity   : .5;
+    }
+    55%
+    {
+      opacity   : .4;
+    }
+    56%
+    {
+      opacity   : .3;
+    }
+    57%
+    {
+      opacity   : .2;
+    }
+    58%
+    {
+      opacity   : .1;
+    }  
+    59%
+    {
+      opacity :0;
+    }
 
+    85%
+    {
+        opacity     : 0;
+    }
 
 
 
