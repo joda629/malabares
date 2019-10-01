@@ -344,7 +344,7 @@ summary
 
 .main__details__img
 {
-    width       : 90%;
+    width       : 50%;
     border-radius : 1rem;
     display     : block;
     margin      : .5rem auto;
@@ -434,22 +434,21 @@ summary
     height  : 350px;
     width   : 30%;
     display : inline-block; 
-    border-radius   : 1rem;
     overflow        : hidden;
     margin-right: 3%;  
 }
 
 .video 
 {
+    border-radius   : 1rem;
     width   : 100%;
-    height  : 100%;
+    height  : 90%;
     outline : none;
 }
 
 .figcaption 
 {
     text-align   : center;
-    font-weight  : 700; 
 }
 
 
@@ -460,21 +459,21 @@ summary
 
 .figure__img                    
 {
-    border  : 2px solid white;
+    /* border  : 2px solid white; */
     height  : 300px;
     width   : 22%;
     display : inline-block;
     margin-right    : 1%;
     margin-top      : 2rem;
-    border-radius   : 1rem;
     overflow        : hidden;
 }
 
 .img
 {
+    border-radius   : 1rem;
     display     : block;
     width       : 100%;
-    height      : 100%;
+    height      : 90%;
 }
 
 
